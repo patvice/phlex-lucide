@@ -3,23 +3,9 @@
 module Phlex
   module Lucide
     class EggIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(
-            d:
-              "M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"
-          )
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12")
         end
       end
     end

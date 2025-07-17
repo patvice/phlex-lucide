@@ -3,29 +3,15 @@
 module Phlex
   module Lucide
     class CableIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(
-            d:
-              "M17 21v-2a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1"
-          )
-          s.path(d: "M19 15V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V9")
-          s.path(d: "M21 21v-2h-4")
-          s.path(d: "M3 5h4V3")
-          s.path(
-            d: "M7 5a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1V3"
-          )
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z")
+          svg.path("d" => "M17 21v-2")
+          svg.path("d" => "M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10")
+          svg.path("d" => "M21 21v-2")
+          svg.path("d" => "M3 5V3")
+          svg.path("d" => "M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z")
+          svg.path("d" => "M7 5V3")
         end
       end
     end

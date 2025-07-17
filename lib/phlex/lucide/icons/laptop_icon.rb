@@ -3,23 +3,10 @@
 module Phlex
   module Lucide
     class LaptopIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(
-            d:
-              "M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"
-          )
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z")
+          svg.path("d" => "M20.054 15.987H3.946")
         end
       end
     end

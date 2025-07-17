@@ -3,24 +3,13 @@
 module Phlex
   module Lucide
     class PictureInPictureIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(
-            d:
-              "M8 4.5v5H3m-1-6 6 6m13 0v-3c0-1.16-.84-2-2-2h-7m-9 9v2c0 1.05.95 2 2 2h3"
-          )
-          s.rect(width: "10", height: "7", x: "12", y: "13.5", ry: "2")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M2 10h6V4")
+          svg.path("d" => "m2 4 6 6")
+          svg.path("d" => "M21 10V7a2 2 0 0 0-2-2h-7")
+          svg.path("d" => "M3 14v2a2 2 0 0 0 2 2h3")
+          svg.rect("x" => "12", "y" => "14", "width" => "10", "height" => "7", "rx" => "1")
         end
       end
     end

@@ -3,27 +3,16 @@
 module Phlex
   module Lucide
     class ConstructionIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.rect(x: "2", y: "6", width: "20", height: "8", rx: "1")
-          s.path(d: "M17 14v7")
-          s.path(d: "M7 14v7")
-          s.path(d: "M17 3v3")
-          s.path(d: "M7 3v3")
-          s.path(d: "M10 14 2.3 6.3")
-          s.path(d: "m14 6 7.7 7.7")
-          s.path(d: "m8 6 8 8")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.rect("x" => "2", "y" => "6", "width" => "20", "height" => "8", "rx" => "1")
+          svg.path("d" => "M17 14v7")
+          svg.path("d" => "M7 14v7")
+          svg.path("d" => "M17 3v3")
+          svg.path("d" => "M7 3v3")
+          svg.path("d" => "M10 14 2.3 6.3")
+          svg.path("d" => "m14 6 7.7 7.7")
+          svg.path("d" => "m8 6 8 8")
         end
       end
     end

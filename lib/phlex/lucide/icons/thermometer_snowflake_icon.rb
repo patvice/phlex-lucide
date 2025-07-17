@@ -3,25 +3,16 @@
 module Phlex
   module Lucide
     class ThermometerSnowflakeIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(d: "M2 12h10")
-          s.path(d: "M9 4v16")
-          s.path(d: "m3 9 3 3-3 3")
-          s.path(d: "M12 6 9 9 6 6")
-          s.path(d: "m6 18 3-3 1.5 1.5")
-          s.path(d: "M20 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "m10 20-1.25-2.5L6 18")
+          svg.path("d" => "M10 4 8.75 6.5 6 6")
+          svg.path("d" => "M10.585 15H10")
+          svg.path("d" => "M2 12h6.5L10 9")
+          svg.path("d" => "M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z")
+          svg.path("d" => "m4 10 1.5 2L4 14")
+          svg.path("d" => "m7 21 3-6-1.5-3")
+          svg.path("d" => "m7 3 3 6h2")
         end
       end
     end

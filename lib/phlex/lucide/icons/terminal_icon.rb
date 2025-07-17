@@ -3,21 +3,10 @@
 module Phlex
   module Lucide
     class TerminalIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.polyline(points: "4 17 10 11 4 5")
-          s.line(x1: "12", x2: "20", y1: "19", y2: "19")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M12 19h8")
+          svg.path("d" => "m4 17 6-6-6-6")
         end
       end
     end

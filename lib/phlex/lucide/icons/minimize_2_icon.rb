@@ -3,23 +3,12 @@
 module Phlex
   module Lucide
     class Minimize2Icon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.polyline(points: "4 14 10 14 10 20")
-          s.polyline(points: "20 10 14 10 14 4")
-          s.line(x1: "14", x2: "21", y1: "10", y2: "3")
-          s.line(x1: "3", x2: "10", y1: "21", y2: "14")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "m14 10 7-7")
+          svg.path("d" => "M20 10h-6V4")
+          svg.path("d" => "m3 21 7-7")
+          svg.path("d" => "M4 14h6v6")
         end
       end
     end

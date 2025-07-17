@@ -3,24 +3,13 @@
 module Phlex
   module Lucide
     class RefreshCcwDotIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(d: "M3 2v6h6")
-          s.path(d: "M21 12A9 9 0 0 0 6 5.3L3 8")
-          s.path(d: "M21 22v-6h-6")
-          s.path(d: "M3 12a9 9 0 0 0 15 6.7l3-2.7")
-          s.circle(cx: "12", cy: "12", r: "1")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M3 2v6h6")
+          svg.path("d" => "M21 12A9 9 0 0 0 6 5.3L3 8")
+          svg.path("d" => "M21 22v-6h-6")
+          svg.path("d" => "M3 12a9 9 0 0 0 15 6.7l3-2.7")
+          svg.circle("cx" => "12", "cy" => "12", "r" => "1")
         end
       end
     end

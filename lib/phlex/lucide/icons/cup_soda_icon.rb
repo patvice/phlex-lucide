@@ -3,23 +3,12 @@
 module Phlex
   module Lucide
     class CupSodaIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.path(d: "m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8")
-          s.path(d: "M5 8h14")
-          s.path(d: "M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0")
-          s.path(d: "m12 8 1-6h2")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8")
+          svg.path("d" => "M5 8h14")
+          svg.path("d" => "M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0")
+          svg.path("d" => "m12 8 1-6h2")
         end
       end
     end

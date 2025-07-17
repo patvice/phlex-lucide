@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require "zeitwerk" # Needed by Phlexing
-require "phlexing"
+require "nokogiri"
 require "progress_bar"
+require "debug"
+require_relative "converter"
 
 module Phlex
   module Lucide
@@ -71,7 +72,6 @@ module Phlex
         svg_files.map do |svg_file|
           icon = generate_icon(svg_file, icon_template)
           bar.increment!
-
           icon
         end
       end
@@ -89,14 +89,9 @@ module Phlex
         # Read the SVG file
         svg_icon = File.read(svg_file)
 
-        # Convert the SVG to a Phlex
-        phlex_icon_content = Phlexing::Converter.convert(svg_icon)
-
         # Add a bit of magic
-        phlex_icon_content = phlex_icon_content
-          .gsub('width: "24"', "width: size")
-          .gsub('height: "24"', "height: size")
-          .gsub("\n) do |s|", ",\n**props) do |s|") # Add props to the block
+        phlex_icon_content = Converter.convert(svg_icon)
+        phlex_icon_content = phlex_icon_content.gsub("\"24\"", "size")
 
         # Write the Phlex file
         File.write("#{PHLEX_ICONS_PATH}/#{icon_file_name}.rb", phlex_icon_content)

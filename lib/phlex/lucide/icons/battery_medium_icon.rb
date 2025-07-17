@@ -3,23 +3,12 @@
 module Phlex
   module Lucide
     class BatteryMediumIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.rect(width: "16", height: "10", x: "2", y: "7", rx: "2", ry: "2")
-          s.line(x1: "22", x2: "22", y1: "11", y2: "13")
-          s.line(x1: "6", x2: "6", y1: "11", y2: "13")
-          s.line(x1: "10", x2: "10", y1: "11", y2: "13")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.path("d" => "M10 14v-4")
+          svg.path("d" => "M22 14v-4")
+          svg.path("d" => "M6 14v-4")
+          svg.rect("x" => "2", "y" => "6", "width" => "16", "height" => "12", "rx" => "2")
         end
       end
     end

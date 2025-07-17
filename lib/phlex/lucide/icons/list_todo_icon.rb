@@ -3,24 +3,13 @@
 module Phlex
   module Lucide
     class ListTodoIcon < Phlex::Lucide::Icon
-      def view_template
-        svg(
-          xmlns: "http://www.w3.org/2000/svg",
-          width: size,
-          height: size,
-          viewbox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          stroke_width: "2",
-          stroke_linecap: "round",
-          stroke_linejoin: "round",
-          **props
-        ) do |s|
-          s.rect(x: "3", y: "5", width: "6", height: "6", rx: "1")
-          s.path(d: "m3 17 2 2 4-4")
-          s.path(d: "M13 6h8")
-          s.path(d: "M13 12h8")
-          s.path(d: "M13 18h8")
+      def template
+        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
+          svg.rect("x" => "3", "y" => "5", "width" => "6", "height" => "6", "rx" => "1")
+          svg.path("d" => "m3 17 2 2 4-4")
+          svg.path("d" => "M13 6h8")
+          svg.path("d" => "M13 12h8")
+          svg.path("d" => "M13 18h8")
         end
       end
     end
