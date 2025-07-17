@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class RegexIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M17 3v10")
           svg.path("d" => "m12.67 5.5 8.66 5")

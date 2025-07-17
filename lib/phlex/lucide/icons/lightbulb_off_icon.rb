@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class LightbulbOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M16.8 11.2c.8-.9 1.2-2 1.2-3.2a6 6 0 0 0-9.3-5")
           svg.path("d" => "m2 2 20 20")

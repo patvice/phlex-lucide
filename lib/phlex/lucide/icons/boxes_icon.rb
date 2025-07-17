@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class BoxesIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z")
           svg.path("d" => "m7 16.5-4.74-2.85")

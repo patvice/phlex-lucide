@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class WatchIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M12 10v2.2l1.6 1")
           svg.path("d" => "m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05")

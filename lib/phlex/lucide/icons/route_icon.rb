@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class RouteIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.circle("cx" => "6", "cy" => "19", "r" => "3")
           svg.path("d" => "M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15")

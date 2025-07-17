@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class GpuIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M2 21V3")
           svg.path("d" => "M2 5h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26")

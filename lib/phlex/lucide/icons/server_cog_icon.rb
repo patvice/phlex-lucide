@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class ServerCogIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m10.852 14.772-.383.923")
           svg.path("d" => "M13.148 14.772a3 3 0 1 0-2.296-5.544l-.383-.923")

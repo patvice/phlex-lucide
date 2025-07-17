@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class ForkliftIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M12 12H5a2 2 0 0 0-2 2v5")
           svg.circle("cx" => "13", "cy" => "19", "r" => "2")

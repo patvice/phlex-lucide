@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class TimerOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M10 2h4")
           svg.path("d" => "M4.6 11a8 8 0 0 0 1.7 8.7 8 8 0 0 0 8.7 1.7")

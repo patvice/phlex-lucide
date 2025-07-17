@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class SlackIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.rect("width" => "3", "height" => "8", "x" => "13", "y" => "2", "rx" => "1.5")
           svg.path("d" => "M19 8.5V10h1.5A1.5 1.5 0 1 0 19 8.5")

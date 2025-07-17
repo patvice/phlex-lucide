@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class MicrowaveIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.rect("width" => "20", "height" => "15", "x" => "2", "y" => "4", "rx" => "2")
           svg.rect("width" => "8", "height" => "7", "x" => "6", "y" => "8", "rx" => "1")

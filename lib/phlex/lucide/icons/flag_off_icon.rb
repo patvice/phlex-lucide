@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class FlagOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528")
           svg.path("d" => "m2 2 20 20")

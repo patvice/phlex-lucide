@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class DraftingCompassIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m12.99 6.74 1.93 3.44")
           svg.path("d" => "M19.136 12a10 10 0 0 1-14.271 0")

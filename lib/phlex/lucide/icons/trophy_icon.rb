@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class TrophyIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978")
           svg.path("d" => "M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978")

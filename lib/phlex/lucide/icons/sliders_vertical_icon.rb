@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class SlidersVerticalIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.line("x1" => "4", "x2" => "4", "y1" => "21", "y2" => "14")
           svg.line("x1" => "4", "x2" => "4", "y1" => "10", "y2" => "3")

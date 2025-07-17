@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class TheaterIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M2 10s3-3 3-8")
           svg.path("d" => "M22 10s-3-3-3-8")

@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class GrabIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4")
           svg.path("d" => "M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2")

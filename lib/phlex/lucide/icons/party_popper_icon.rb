@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class PartyPopperIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M5.8 11.3 2 22l10.7-3.79")
           svg.path("d" => "M4 3h.01")

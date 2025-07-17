@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class ScaleIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z")
           svg.path("d" => "m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z")

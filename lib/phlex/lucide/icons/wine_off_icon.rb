@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class WineOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M8 22h8")
           svg.path("d" => "M7 10h3m7 0h-1.343")

@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class CloudCogIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m10.852 19.772-.383.924")
           svg.path("d" => "m13.148 14.228.383-.923")

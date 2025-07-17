@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class NfcIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M6 8.32a7.43 7.43 0 0 1 0 7.36")
           svg.path("d" => "M9.46 6.21a11.76 11.76 0 0 1 0 11.58")

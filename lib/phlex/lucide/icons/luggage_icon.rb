@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class LuggageIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2")
           svg.path("d" => "M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14")

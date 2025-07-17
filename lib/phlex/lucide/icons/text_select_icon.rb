@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class TextSelectIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M14 21h1")
           svg.path("d" => "M14 3h1")

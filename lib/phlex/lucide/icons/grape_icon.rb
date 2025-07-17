@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class GrapeIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M22 5V2l-5.89 5.89")
           svg.circle("cx" => "16.6", "cy" => "15.89", "r" => "3")

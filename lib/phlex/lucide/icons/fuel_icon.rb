@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class FuelIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.line("x1" => "3", "x2" => "15", "y1" => "22", "y2" => "22")
           svg.line("x1" => "4", "x2" => "14", "y1" => "9", "y2" => "9")

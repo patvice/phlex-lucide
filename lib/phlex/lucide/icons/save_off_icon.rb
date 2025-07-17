@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class SaveOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M13 13H8a1 1 0 0 0-1 1v7")
           svg.path("d" => "M14 8h1")

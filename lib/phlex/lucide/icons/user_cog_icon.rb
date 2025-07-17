@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class UserCogIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M10 15H6a4 4 0 0 0-4 4v2")
           svg.path("d" => "m14.305 16.53.923-.382")

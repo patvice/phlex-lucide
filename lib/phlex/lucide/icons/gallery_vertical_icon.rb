@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class GalleryVerticalIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M3 2h18")
           svg.rect("width" => "18", "height" => "12", "x" => "3", "y" => "6", "rx" => "2")

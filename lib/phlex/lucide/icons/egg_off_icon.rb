@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class EggOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m2 2 20 20")
           svg.path("d" => "M20 14.347V14c0-6-4-12-8-12-1.078 0-2.157.436-3.157 1.19")

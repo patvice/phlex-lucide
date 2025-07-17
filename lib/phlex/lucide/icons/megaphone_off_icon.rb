@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class MegaphoneOffIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M11.636 6A13 13 0 0 0 19.4 3.2 1 1 0 0 1 21 4v11.344")
           svg.path("d" => "M14.378 14.357A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1")

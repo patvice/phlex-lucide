@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class ScissorsLineDashedIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M5.42 9.42 8 12")
           svg.circle("cx" => "4", "cy" => "8", "r" => "2")

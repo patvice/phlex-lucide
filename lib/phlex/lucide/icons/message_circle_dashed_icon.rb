@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class MessageCircleDashedIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M13.5 3.1c-.5 0-1-.1-1.5-.1s-1 .1-1.5.1")
           svg.path("d" => "M19.3 6.8a10.45 10.45 0 0 0-2.1-2.1")

@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class SendToBackIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.rect("x" => "14", "y" => "14", "width" => "8", "height" => "8", "rx" => "2")
           svg.rect("x" => "2", "y" => "2", "width" => "8", "height" => "8", "rx" => "2")

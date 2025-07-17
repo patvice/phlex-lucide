@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class UnplugIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m19 5 3-3")
           svg.path("d" => "m2 22 3-3")

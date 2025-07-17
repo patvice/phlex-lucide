@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class FolderCodeIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M10 10.5 8 13l2 2.5")
           svg.path("d" => "m14 10.5 2 2.5-2 2.5")

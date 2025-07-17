@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class IceCreamConeIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11")
           svg.path("d" => "M17 7A5 5 0 0 0 7 7")

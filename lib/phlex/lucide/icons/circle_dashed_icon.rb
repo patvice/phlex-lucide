@@ -3,7 +3,7 @@
 module Phlex
   module Lucide
     class CircleDashedIcon < Phlex::Lucide::Icon
-      def template
+      def view_template
         svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
           svg.path("d" => "M10.1 2.182a10 10 0 0 1 3.8 0")
           svg.path("d" => "M13.9 21.818a10 10 0 0 1-3.8 0")
