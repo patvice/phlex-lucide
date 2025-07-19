@@ -4,10 +4,20 @@ module Phlex
   module Lucide
     class FeatherIcon < Phlex::Lucide::Icon
       def view_template
-        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
-          svg.path("d" => "M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z")
-          svg.path("d" => "M16 8 2 22")
-          svg.path("d" => "M17.5 15H9")
+        svg(
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          stroke_width: "2",
+          stroke_linecap: "round",
+          stroke_linejoin: "round",
+          **props
+        ) do |svg|
+          svg.path(d: "M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z")
+          svg.path(d: "M16 8 2 22")
+          svg.path(d: "M17.5 15H9")
         end
       end
     end

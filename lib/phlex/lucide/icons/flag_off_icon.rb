@@ -4,11 +4,21 @@ module Phlex
   module Lucide
     class FlagOffIcon < Phlex::Lucide::Icon
       def view_template
-        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
-          svg.path("d" => "M16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528")
-          svg.path("d" => "m2 2 20 20")
-          svg.path("d" => "M4 22V4")
-          svg.path("d" => "M7.656 2H8c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10.347")
+        svg(
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          stroke_width: "2",
+          stroke_linecap: "round",
+          stroke_linejoin: "round",
+          **props
+        ) do |svg|
+          svg.path(d: "M16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528")
+          svg.path(d: "m2 2 20 20")
+          svg.path(d: "M4 22V4")
+          svg.path(d: "M7.656 2H8c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10.347")
         end
       end
     end

@@ -4,12 +4,22 @@ module Phlex
   module Lucide
     class ListStartIcon < Phlex::Lucide::Icon
       def view_template
-        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
-          svg.path("d" => "M16 12H3")
-          svg.path("d" => "M16 18H3")
-          svg.path("d" => "M10 6H3")
-          svg.path("d" => "M21 18V8a2 2 0 0 0-2-2h-5")
-          svg.path("d" => "m16 8-2-2 2-2")
+        svg(
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          stroke_width: "2",
+          stroke_linecap: "round",
+          stroke_linejoin: "round",
+          **props
+        ) do |svg|
+          svg.path(d: "M16 12H3")
+          svg.path(d: "M16 18H3")
+          svg.path(d: "M10 6H3")
+          svg.path(d: "M21 18V8a2 2 0 0 0-2-2h-5")
+          svg.path(d: "m16 8-2-2 2-2")
         end
       end
     end

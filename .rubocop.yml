@@ -20,6 +20,18 @@ Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
   IndentationWidth: 2
 
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: special_for_inner_method_call_in_parentheses
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: no_comma
+
 Layout/LineLength:
   Exclude:
     - lib/phlex/lucide/icons/*

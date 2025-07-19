@@ -26,13 +26,21 @@ module Phlex
 
         spacing = " " * indent
         tag_name = node.name
-        attrs = node.attributes.map { |k, v| "\"#{k}\" => #{v.value.inspect}" }.join(", ")
+        attrs = node.attributes.map do |k, v|
+          if k.to_s.include?("-")
+            "#{k.gsub("-", "_")}: #{v.value.inspect}"
+          else
+            "#{k}: #{v.value.inspect}"
+          end
+        end
+        attrs << "xmlns: #{node["xmlns"]}" if node["xmlns"]
+        attrs = attrs.join(",\n")
 
         if node.element_children.any?
           inner = node.element_children.map { |child| convert_element_to_phlex(child, indent + 2) }.join("\n")
-          "#{spacing}#{tag_name}(#{attrs}, **props) do |svg| \n#{inner}\n#{spacing}end"
+          "#{spacing}#{tag_name}(\n#{attrs},\n**props\n) do |svg| \n#{inner}\n#{spacing}end"
         else
-          "#{spacing}svg.#{tag_name}(#{attrs})"
+          "#{spacing * 2}svg.#{tag_name}(#{attrs})"
         end
       end
     end

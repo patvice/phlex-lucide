@@ -4,11 +4,30 @@ module Phlex
   module Lucide
     class PawPrintIcon < Phlex::Lucide::Icon
       def view_template
-        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
-          svg.circle("cx" => "11", "cy" => "4", "r" => "2")
-          svg.circle("cx" => "18", "cy" => "8", "r" => "2")
-          svg.circle("cx" => "20", "cy" => "16", "r" => "2")
-          svg.path("d" => "M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z")
+        svg(
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          stroke_width: "2",
+          stroke_linecap: "round",
+          stroke_linejoin: "round",
+          **props
+        ) do |svg|
+          svg.circle(cx: "11",
+            cy: "4",
+            r: "2"
+          )
+          svg.circle(cx: "18",
+            cy: "8",
+            r: "2"
+          )
+          svg.circle(cx: "20",
+            cy: "16",
+            r: "2"
+          )
+          svg.path(d: "M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z")
         end
       end
     end

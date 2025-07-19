@@ -4,10 +4,30 @@ module Phlex
   module Lucide
     class PercentIcon < Phlex::Lucide::Icon
       def view_template
-        svg("width" => size, "height" => size, "viewBox" => "0 0 24 24", "fill" => "none", "stroke" => "currentColor", "stroke-width" => "2", "stroke-linecap" => "round", "stroke-linejoin" => "round", **props) do |svg|
-          svg.line("x1" => "19", "x2" => "5", "y1" => "5", "y2" => "19")
-          svg.circle("cx" => "6.5", "cy" => "6.5", "r" => "2.5")
-          svg.circle("cx" => "17.5", "cy" => "17.5", "r" => "2.5")
+        svg(
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          stroke_width: "2",
+          stroke_linecap: "round",
+          stroke_linejoin: "round",
+          **props
+        ) do |svg|
+          svg.line(x1: "19",
+            x2: "5",
+            y1: "5",
+            y2: "19"
+          )
+          svg.circle(cx: "6.5",
+            cy: "6.5",
+            r: "2.5"
+          )
+          svg.circle(cx: "17.5",
+            cy: "17.5",
+            r: "2.5"
+          )
         end
       end
     end
